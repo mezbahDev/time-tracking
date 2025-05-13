@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Tracking Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Rubik', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#0b0f1e] h-screen flex items-center justify-center">
+    <div class="grid grid-cols-5 gap-2 w-[90%] max-w-7xl">
+      
+      <!-- Profile Card -->
+      <div class="row-span-2 bg-[#181d38] rounded-xl">
+        <div class="bg-[#735bff] flex flex-col p-8 rounded-xl gap-10">
+          <img
+            src="/images/image-jeremy.png"
+            alt=""
+            class="h-20 w-20 rounded-full border-[3px] border-white"
+          />
+          <div>
+            <p class="text-[#d3dbff] text-sm">Report for</p>
+            <p class="text-white text-3xl font-light leading-8">Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 px-6 py-4 text-[#8e6cff]">
+          <p class="hover:text-white cursor-pointer">Daily</p>
+          <p class="hover:text-white cursor-pointer">Weekly</p>
+          <p class="hover:text-white cursor-pointer">Monthly</p>
+        </div>
+      </div>
+
+      <!-- Work Card -->
+      <div class="bg-[rgb(255,133,102)] rounded-xl relative overflow-hidden ">
+        <div class="p-4 bg-[rgb(255,133,102)]">
+          <img src="/images/icon-work.svg" alt="" class="w-12 h-12" />
+        </div>
+        <div class="px-10 rounded-t-xl bg-[#181d38] h-full hover:bg-[#735bff]">
+          <div class="flex justify-between items-center text-white">
+            <p>Work</p>
+            <img src="/images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="text-white mt-4">
+            <p class="text-3xl font-light">32hrs</p>
+            <p class="text-sm text-gray-400">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Other Cards -->
+      <div class="bg-yellow-400 rounded-xl">3</div>
+      <div class="bg-green-500 rounded-xl">4</div>
+      <div class="bg-orange-500 rounded-xl col-start-2 row-start-2">5</div>
+      <div class="bg-black text-white rounded-xl col-start-3 row-start-2">6</div>
+      <div class="bg-[wheat] rounded-xl col-start-4 row-start-2">7</div>
+    </div>
+  </body>
+</html>
